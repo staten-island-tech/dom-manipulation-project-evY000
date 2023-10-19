@@ -7,6 +7,3 @@ DOMSelectors.form.addEventListener("submit", function (event) {
     event.preventDefault();
     DOMSelectors.h2s.forEach((header)=> header.textContent = DOMSelectors.firstName.value)
 });
-const Cancel = {
-    
-}
