@@ -10,10 +10,9 @@ DOMSelectors.form.addEventListener("submit", function (event) {
 );
 function information(){
     const user ={
-        firstname: DOMSelectors.firstName.value
+        firstName: DOMSelectors.firstName.value
     }
-    inject(user)
-    clear()
+    clear(user)
 }
 function clear(){
     DOMSelectors.firstName.value = ''
