@@ -12,8 +12,11 @@ function information(){
     const user ={
         firstName: DOMSelectors.firstName.value
     }
+    
     clear(user)
 }
 function clear(){
     DOMSelectors.firstName.value = ''
 };
+// inject needed
+// subtract inject needed
