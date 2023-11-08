@@ -9,14 +9,11 @@ DOMSelectors.form.addEventListener("submit", function (event) {
     information()}
 );
 function information(){
-    const user ={
-        firstName: DOMSelectors.firstName.value
-    }
-    
+    DOMSelectors.form.addEventListener("click",function(){
+    const user = DOMSelectors.firstName.value; 
+    DOMSelectors.form.insertAdjacentHTML("beforeend", "<h2> ${user} </h2>");
     clear(user)
-}
+    })};
 function clear(){
     DOMSelectors.firstName.value = ''
 };
-// inject needed
-// subtract inject needed
